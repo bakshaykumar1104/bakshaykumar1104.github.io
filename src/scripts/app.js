@@ -27,6 +27,7 @@ export function initApp() {
   const toast    = $('#toast');
   const toastCash= $('#toast-cash');
   const backhint = $('#backhint');
+  const mobileNext = $('#mobile-next');
   const wheel    = $('#wheel');
   const wheelIn  = $('#wheel-in');
 
@@ -176,6 +177,12 @@ export function initApp() {
 
     current = id;
     backhint.classList.toggle('on', id !== SCREENS[0].id);
+    if (mobileNext) {
+      const screenIndex = SCREENS.findIndex((s) => s.id === id);
+      const next = SCREENS[screenIndex + 1] || SCREENS[0];
+      mobileNext.dataset.go = next.id;
+      mobileNext.textContent = next.id === SCREENS[0].id ? 'Return Home ›' : `Next: ${next.label} ›`;
+    }
     objEl.innerHTML = meta.objective;
     gsap.to(blip, { left: meta.map[0] + '%', top: meta.map[1] + '%', duration: .6, ease: 'power2.inOut' });
 

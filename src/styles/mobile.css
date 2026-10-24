@@ -17,6 +17,15 @@
 
   .plate { background-position: 62% center; }
   .plate video { object-fit: cover; object-position: 62% center; }
+  .plate[data-id="hero"] { background-position: 68% center; }
+  .plate[data-id="about"] { background-position: 59% center; }
+  .plate[data-id="skills"] { background-position: 66% center; }
+  .plate[data-id="projects"] { background-position: 64% center; }
+  .plate[data-id="experience"] { background-position: 65% center; }
+  .plate[data-id="achievements"] { background-position: 63% center; }
+  .plate[data-id="services"] { background-position: 60% center; }
+  .plate[data-id="contact"] { background-position: 64% center; }
+  .plate[data-id="outro"] { background-position: 50% center; }
 
   .scrim {
     background: linear-gradient(100deg,
@@ -70,7 +79,7 @@
     left: 6cqw;
     top: 24cqh;
     width: 88cqw;
-    max-height: 65cqh;
+    max-height: 59cqh;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 1cqw 2cqw 8cqh 0;
@@ -188,13 +197,37 @@
   .tagline,
   .toast { display: none; }
 
-  .backhint {
+  .backhint { display: none !important; }
+
+  .mobile-nav {
+    position: absolute;
+    z-index: 75;
+    left: 5cqw;
     right: 5cqw;
-    top: auto;
-    bottom: 2.2cqh;
-    font-size: 3cqw;
-    padding: 1.2cqw 2cqw;
-    background: rgba(4,2,10,.72);
+    bottom: max(2.2cqh, env(safe-area-inset-bottom));
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 2cqw;
+    pointer-events: auto;
+  }
+  [data-screen="hero"] .mobile-nav { display: none; }
+  .mobile-nav-btn {
+    min-height: 6.2cqh;
+    border: 1px solid rgba(255,255,255,.35);
+    color: #fff;
+    background: rgba(5,3,10,.88);
+    font: 700 3.35cqw/1 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 2cqw 3cqw;
+    box-shadow: 0 0 4cqw rgba(0,0,0,.55);
+  }
+  .mobile-next {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-left: .8cqw solid #fff;
+    background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 48%, rgba(5,3,10,.92)));
   }
 
   .wheel-in { width: 88cqw; height: 88cqw; }

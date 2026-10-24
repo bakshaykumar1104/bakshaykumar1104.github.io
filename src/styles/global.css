@@ -33,6 +33,7 @@ html, body {
 }
 
 body { display: grid; place-items: center; }
+.mobile-nav { display: none; }
 
 /* ---------- PER-SCREEN COLOUR THEMES ----------
    The HUD accent shifts to match each frame's palette.
