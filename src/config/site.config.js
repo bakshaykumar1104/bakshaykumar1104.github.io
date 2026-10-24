@@ -58,7 +58,7 @@ export const SCREENS = [
     id: 'about',
     label: 'Professional Profile',
     frame: '/frames/02-about.png',
-    objective: 'Review the candidate<br>profile and direction',
+    objective: 'Review the professional<br>profile and career direction',
     map: [30, 62],
     accent: '#56d6c9',
     accent2: '#ffbd59',
@@ -80,7 +80,7 @@ export const SCREENS = [
     id: 'projects',
     label: 'Project Portfolio',
     frame: '/frames/04-projects.png',
-    objective: 'Review delivery and<br>learning initiatives',
+    objective: 'Review completed and<br>in-progress initiatives',
     map: [58, 40],
     accent: '#22c7b8',
     accent2: '#ff8c69',
@@ -113,7 +113,7 @@ export const SCREENS = [
     id: 'services',
     label: 'Value Offered',
     frame: '/frames/07-services.png',
-    objective: 'Review the value<br>brought to IT teams',
+    objective: 'Review the value<br>offered to IT teams',
     map: [38, 84],
     accent: '#45c7e8',
     accent2: '#ff9566',
@@ -124,7 +124,7 @@ export const SCREENS = [
     id: 'contact',
     label: 'Contact',
     frame: '/frames/08-contact.png',
-    objective: 'Open a professional<br>line of communication',
+    objective: 'Start a professional<br>conversation',
     map: [82, 34],
     accent: '#6ea8ff',
     accent2: '#ffb238',
@@ -135,7 +135,7 @@ export const SCREENS = [
     id: 'outro',
     label: 'Complete Review',
     frame: '/frames/09-outro.png',
-    objective: 'Complete the candidate<br>portfolio review',
+    objective: 'Complete the<br>portfolio review',
     map: [88, 88],
     accent: '#ffa3bd',
     accent2: '#ffd9a8',
@@ -154,9 +154,9 @@ export const ABOUT = {
   subtitle: 'Profile',
 
   intro: `I am a program and project management professional with six
-          years of experience coordinating end-to-end delivery,
-          requirements, documentation, risks, stakeholders, and
-          technical teams. I am now applying this experience to IT
+          years of experience coordinating end-to-end delivery, managing
+          requirements, documentation, and risks, and aligning stakeholders
+          with technical teams. I am now applying this experience to IT
           infrastructure programs, PMO operations, and technology-led
           delivery environments.`,
 
@@ -174,7 +174,7 @@ export const ABOUT = {
     {
       icon: '✦',
       label: 'Availability',
-      value: 'Full-time | Virtual, hybrid, or relocation'
+      value: 'Available for full-time, remote, hybrid, or relocation opportunities'
     }
   ],
 
@@ -245,7 +245,7 @@ export const PROJECTS = {
       icon: '◆',
       name: 'Real Estate Company Website',
       description:
-        'Developing a real estate company website with property information, customer enquiries, and appointment-slot booking.',
+        'Developing a real estate company website that presents property information, captures customer enquiries, and supports appointment scheduling.',
       featured: true,
       url: ''
     },
@@ -261,7 +261,7 @@ export const PROJECTS = {
       icon: '●',
       name: 'Appointment Booking Automation',
       description:
-        'Created an automated appointment-booking workflow to capture requests, organize available slots, and reduce manual coordination.',
+        'Created an automated appointment-booking workflow that captures requests, organizes available time slots, and reduces manual coordination.',
       featured: false,
       url: ''
     },
@@ -269,7 +269,7 @@ export const PROJECTS = {
       icon: '◇',
       name: 'Digital Marketing Automation',
       description:
-        'Created a digital marketing workflow to organize campaign activities, lead follow-up, and repeatable communication tasks.',
+        'Created a digital marketing workflow to organize campaign activities, lead follow-ups, and recurring communication tasks.',
       featured: false,
       url: ''
     }
@@ -296,22 +296,22 @@ export const EXPERIENCE = {
 
   timeline: [
     {
-      period: '2023 - PRESENT',
+      period: '2023–PRESENT',
       role: 'Development Manager & Civil Engineer',
       description:
-        'Hanuman Housing Projects - Own end-to-end programs covering requirements, planning, approvals, document governance, issue resolution, stakeholder reporting, resource coordination, execution, and handover.'
+        'At Hanuman Housing Projects, I manage end-to-end programs covering requirements, planning, approvals, document governance, issue resolution, stakeholder reporting, resource coordination, execution, and handover.'
     },
     {
-      period: '2019 - 2023',
-      role: 'B.Tech Civil Engineering',
+      period: '2019–2023',
+      role: 'B.Tech in Civil Engineering',
       description:
-        'GITAM Deemed to be University - Built an engineering foundation in structured problem-solving, technical coordination, research, documentation, and project execution.'
+        'At GITAM Deemed to be University, I developed a strong foundation in structured problem-solving, technical coordination, research, documentation, and project execution.'
     },
     {
-      period: 'CURRENT DEVELOPMENT',
-      role: 'IT Infrastructure & PMO Upskilling',
+      period: 'PROFESSIONAL DEVELOPMENT',
+      role: 'IT Infrastructure & PMO Skills Development',
       description:
-        'Building capabilities in advanced Excel, dashboards, basic SQL, ServiceNow fundamentals, and coding with C, Java, and Python for IT infrastructure and PMO environments.'
+        'I am developing skills in advanced Excel, dashboard creation, basic SQL, ServiceNow fundamentals, and programming with C, Java, and Python for IT infrastructure and PMO environments.'
     }
   ]
 };
@@ -336,13 +336,13 @@ export const ACHIEVEMENTS = {
       icon: '◈',
       name: 'Document Governance',
       description:
-        'Maintained controlled drawings, revision tracking, and a reliable source of approved project records.'
+        'Maintained controlled drawings, revision histories, and a reliable repository of approved project records.'
     },
     {
       icon: '⚡',
       name: 'Cross-Team Alignment',
       description:
-        'Connected technical teams, clients, decision-makers, office resources, and site staff around common milestones.'
+        'Aligned technical teams, clients, decision-makers, office personnel, and site staff around shared milestones.'
     },
     {
       icon: '◷',
@@ -369,11 +369,11 @@ export const SERVICES = {
   subtitle: 'For IT Teams',
 
   intro: `I bring structured program coordination, governance discipline,
-          clear stakeholder communication, and hands-on technical
-          curiosity to IT infrastructure and PMO teams. My experience
-          is strongest where multiple stakeholders, controlled
-          documentation, dependencies, risks, and delivery milestones
-          must remain aligned.`,
+          clear stakeholder communication, and a hands-on approach to
+          technical learning to IT infrastructure and PMO teams. My
+          strengths are most valuable in environments where stakeholders,
+          controlled documentation, dependencies, risks, and delivery
+          milestones must remain aligned.`,
 
   stats: [
     {
@@ -382,7 +382,7 @@ export const SERVICES = {
     },
     {
       number: '3',
-      label: 'Coding Languages'
+      label: 'Programming Languages'
     },
     {
       number: '3',
@@ -449,7 +449,7 @@ export const OUTRO = {
   kicker: 'Thank you for reviewing my portfolio',
   titleLine1: 'Ready',
   titleLine2: 'To Deliver',
-  subtitle: 'Open to IT infrastructure and program opportunities',
+  subtitle: 'Open to IT infrastructure and program management opportunities',
 
   button: {
     text: '⌂ Return to Portfolio',
@@ -483,7 +483,7 @@ export const LOADOUT = {
     },
     {
       name: 'SQL',
-      role: 'Developing'
+      role: 'Foundational'
     },
     {
       name: 'ServiceNow',
