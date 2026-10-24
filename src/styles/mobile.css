@@ -1,0 +1,228 @@
+/* Phone-only presentation. Desktop rules remain unchanged in global.css. */
+@media (max-width: 700px) {
+  html, body {
+    width: 100%;
+    min-height: 100%;
+    min-height: 100dvh;
+    overflow: hidden;
+  }
+
+  .stage {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    aspect-ratio: auto;
+  }
+
+  .plate { background-position: 62% center; }
+  .plate video { object-fit: cover; object-position: 62% center; }
+
+  .scrim {
+    background: linear-gradient(100deg,
+      rgba(4,2,10,.96) 0%,
+      rgba(4,2,10,.84) 48%,
+      rgba(4,2,10,.42) 78%,
+      rgba(4,2,10,.18) 100%);
+  }
+  .scrim.top {
+    background: linear-gradient(to bottom, rgba(4,2,10,.82), transparent 30%);
+  }
+  .scrim.corner { display: none; }
+
+  .title-block { left: 6cqw; top: 4.5cqh; max-width: 78cqw; }
+  .gta-title,
+  .gta-title.sm {
+    font-size: 14cqw;
+    line-height: .84;
+    -webkit-text-stroke-width: .25cqw;
+    text-shadow: .35cqw .35cqw 0 #17081f, .7cqw .7cqw 0 #17081f, 0 0 7cqw #000;
+  }
+  .gta-title.sm { font-size: 11.5cqw; }
+  .gta-sub {
+    font-size: 7.5cqw;
+    margin: -1cqw 0 0 9cqw;
+    text-shadow: .3cqw .3cqw 0 #1c0714, 0 0 5cqw rgba(0,0,0,.8);
+  }
+
+  .menu {
+    left: 6cqw;
+    top: 29cqh;
+    width: 88cqw;
+    height: 57cqh;
+  }
+  .menu-item {
+    font-size: min(4.2cqw, 2.45cqh);
+    padding: 0 3cqw;
+    letter-spacing: .075em;
+  }
+  .menu-item.done::before { left: -4cqw; font-size: 3.2cqw; }
+  .menu-item.sel { transform: translateX(1cqw); }
+  .menu-hl {
+    border-left-width: .8cqw;
+    box-shadow: 0 0 6cqw color-mix(in srgb, var(--accent) 55%, transparent), inset 0 0 0 1px rgba(255,255,255,.2);
+  }
+
+  .panel,
+  .panel.wide,
+  .panel.low,
+  [data-s="services"] .panel.low {
+    left: 6cqw;
+    top: 24cqh;
+    width: 88cqw;
+    max-height: 65cqh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1cqw 2cqw 8cqh 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) rgba(255,255,255,.12);
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+  .panel::after {
+    content: '';
+    position: sticky;
+    display: block;
+    bottom: -8cqh;
+    height: 5cqh;
+  }
+
+  .body-text,
+  [data-s="services"] .body-text {
+    font-size: 4.25cqw;
+    line-height: 1.48;
+  }
+  .card {
+    gap: 3cqw;
+    padding: 2.2cqw 2.8cqw;
+    margin-top: 1.7cqw;
+    border-left-width: .7cqw;
+  }
+  .card-ico {
+    width: 9cqw;
+    height: 9cqw;
+    font-size: 4.3cqw;
+    border-radius: 1cqw;
+  }
+  .card-t { font-size: 4.2cqw; }
+  .card-s { font-size: 3.65cqw; line-height: 1.35; }
+
+  .skill-row { gap: 2.2cqw; margin-top: 3cqw; }
+  .skill-n { width: 34cqw; font-size: 3.8cqw; }
+  .skill-t { height: 2.2cqw; }
+  .skill-p { width: 11cqw; font-size: 3.8cqw; }
+
+  .tl { padding-left: 5cqw; margin-top: 1cqw; }
+  .tl::before { left: 1cqw; width: .3cqw; }
+  .tl-item { margin-bottom: 4cqw; }
+  .tl-item::before {
+    left: -4.6cqw;
+    top: 1cqw;
+    width: 2.3cqw;
+    height: 2.3cqw;
+    border-width: .45cqw;
+  }
+  .tl-y { font-size: 3.5cqw; }
+  .tl-h { font-size: 4.5cqw; }
+  .tl-b { font-size: 3.7cqw; line-height: 1.4; }
+
+  .stat-row,
+  [data-s="services"] .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5cqw;
+    margin-top: 3cqw;
+  }
+  .stat,
+  [data-s="services"] .stat { padding: 2.2cqw 1cqw; }
+  .stat b,
+  [data-s="services"] .stat b { font-size: 7cqw; }
+  .stat span,
+  [data-s="services"] .stat span {
+    font-size: 2.7cqw;
+    line-height: 1.25;
+    letter-spacing: .09em;
+  }
+
+  .cx { gap: 3cqw; margin-top: 3cqw; }
+  .cx-ico {
+    width: 9cqw;
+    height: 9cqw;
+    font-size: 4cqw;
+    border-radius: 1cqw;
+  }
+  .cx-l { font-size: 3cqw; }
+  .cx-v { font-size: 4cqw; overflow-wrap: anywhere; }
+
+  .btn,
+  [data-s="services"] .btn {
+    gap: 4cqw;
+    min-width: 55cqw;
+    margin-top: 4cqw;
+    padding: 2.5cqw 3cqw;
+    border-left-width: .7cqw;
+    font-size: 3.8cqw;
+  }
+
+  .outro { padding: 8cqw; }
+  .outro-kicker { font-size: 3.2cqw; letter-spacing: .28em; }
+  .outro .gta-title { font-size: 15cqw; }
+  .outro .gta-sub { margin-left: 0; }
+
+  .hud-tr { right: 4cqw; top: 2.5cqh; }
+  .hud-stats { display: none; }
+  .hud-avatar {
+    width: 13cqw;
+    height: 13cqw;
+    border-width: .4cqw;
+    border-radius: 1.4cqw;
+  }
+  .ak-mark { font-size: 5.2cqw; }
+  .ak-mark i { width: .45cqw; height: 7cqw; }
+  .hud-avatar::before,
+  .hud-avatar::after { left: 1.2cqw; right: 1.2cqw; height: .3cqw; }
+
+  .minimap,
+  .objective,
+  .quote,
+  .tagline,
+  .toast { display: none; }
+
+  .backhint {
+    right: 5cqw;
+    top: auto;
+    bottom: 2.2cqh;
+    font-size: 3cqw;
+    padding: 1.2cqw 2cqw;
+    background: rgba(4,2,10,.72);
+  }
+
+  .wheel-in { width: 88cqw; height: 88cqw; }
+  .wheel-hub b { font-size: 6cqw; }
+  .wheel-hub span { font-size: 2.8cqw; }
+  .seg {
+    width: 27cqw;
+    margin: -7cqw 0 0 -13.5cqw;
+    padding: 1.8cqw;
+  }
+  .seg b { font-size: 3.2cqw; }
+  .seg span { font-size: 2.6cqw; }
+
+  .splash-in { width: 88cqw; }
+  .splash-kicker { font-size: 3.2cqw; margin-bottom: 3cqw; }
+  .splash-title { font-size: 15cqw; }
+  .splash-sub { font-size: 7cqw; }
+  .splash-bar { height: 1.5cqw; margin-top: 7cqw; }
+  .splash-tips { margin-top: 2.5cqw; font-size: 3.2cqw; }
+  .splash-tips span:first-child { max-width: 68cqw; text-align: left; }
+}
+
+/* Short landscape phones use the existing desktop composition. */
+@media (max-width: 700px) and (orientation: landscape) {
+  .stage {
+    width: 100vw;
+    height: auto;
+    max-width: calc(100vh * 16 / 9);
+    aspect-ratio: 16 / 9;
+  }
+}
