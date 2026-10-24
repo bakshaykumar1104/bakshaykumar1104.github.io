@@ -169,7 +169,9 @@ body { display: grid; place-items: center; }
    MAIN MENU
    ============================================================ */
 .menu {
-  position: absolute; left: 3.4cqw; top: 34cqh; z-index: 12; width: 23cqw;
+  position: absolute; left: 3.4cqw; top: 32cqh; z-index: 12;
+  width: 23cqw; height: 49cqh;
+  display: grid; grid-template-rows: repeat(9, minmax(0, 1fr));
 }
 .menu-hl {
   position: absolute; left: 0; width: 100%; z-index: -1;
@@ -184,9 +186,9 @@ body { display: grid; place-items: center; }
 .menu-item {
   position: relative;
   display: flex; align-items: center; justify-content: space-between;
-  font-size: 1.48cqw; font-weight: 600; letter-spacing: .085em;
+  font-size: min(1.45cqw, 2.4cqh); font-weight: 600; letter-spacing: .085em;
   text-transform: uppercase;
-  padding: .38cqw .95cqw;
+  min-height: 0; padding: 0 .95cqw;
   color: rgba(255,255,255,.8);
   cursor: pointer;
   text-shadow: 0 .12cqw .34cqw rgba(0,0,0,.95);
@@ -199,7 +201,7 @@ body { display: grid; place-items: center; }
 .menu-item.done::before {
   content: '✓';
   position: absolute; left: -1.5cqw;
-  color: var(--money); font-size: 1cqw;
+  color: var(--money); font-size: min(1cqw, 1.8cqh);
   text-shadow: 0 0 .8cqw rgba(74,222,128,.8);
 }
 
