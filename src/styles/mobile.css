@@ -211,6 +211,7 @@
     pointer-events: auto;
   }
   [data-screen="hero"] .mobile-nav { display: none; }
+  .mobile-back { display: block; }
   .mobile-nav-btn {
     min-height: 6.2cqh;
     border: 1px solid rgba(255,255,255,.35);

@@ -33,7 +33,33 @@ html, body {
 }
 
 body { display: grid; place-items: center; }
-.mobile-nav { display: none; }
+
+/* One consistent page-to-page control. Individual content CTAs that point
+   to the following screen are hidden to avoid duplicate Next buttons. */
+.screen .btn[data-go] { display: none; }
+.mobile-nav {
+  position: absolute;
+  right: 3.4cqw;
+  bottom: 15cqh;
+  z-index: 75;
+  display: grid;
+  pointer-events: auto;
+}
+[data-screen="hero"] .mobile-nav { display: none; }
+.mobile-back { display: none; }
+.mobile-nav-btn {
+  border: 1px solid rgba(255,255,255,.34);
+  border-left: .2cqw solid #fff;
+  color: #fff;
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 42%, rgba(5,3,10,.92)));
+  font: 700 1.05cqw/1 'Barlow Semi Condensed', sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .75cqw 1.1cqw;
+  min-width: 15cqw;
+  cursor: pointer;
+  box-shadow: 0 0 1.7cqw color-mix(in srgb, var(--accent) 35%, transparent);
+}
 
 /* ---------- PER-SCREEN COLOUR THEMES ----------
    The HUD accent shifts to match each frame's palette.
