@@ -197,7 +197,6 @@
   .tagline,
   .toast { display: none; }
 
-  .backhint { display: none !important; }
 
   .mobile-nav {
     position: absolute;

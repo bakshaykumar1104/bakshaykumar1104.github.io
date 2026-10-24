@@ -26,7 +26,6 @@ export function initApp() {
   const objEl    = $('#objective');
   const toast    = $('#toast');
   const toastCash= $('#toast-cash');
-  const backhint = $('#backhint');
   const mobileNext = $('#mobile-next');
   const wheel    = $('#wheel');
   const wheelIn  = $('#wheel-in');
@@ -176,7 +175,6 @@ export function initApp() {
     }
 
     current = id;
-    backhint.classList.toggle('on', id !== SCREENS[0].id);
     if (mobileNext) {
       const screenIndex = SCREENS.findIndex((s) => s.id === id);
       const next = SCREENS[screenIndex + 1] || SCREENS[0];
