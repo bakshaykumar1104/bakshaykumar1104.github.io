@@ -476,6 +476,29 @@ body { display: grid; place-items: center; }
 }
 .stat span { font-size: .92cqw; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); }
 
+/* Keep the Value Offered copy, statistics and action above the bottom HUD
+   on wide or short browser windows. */
+[data-s="services"] .panel.low {
+  top: 47cqh;
+  width: 32cqw;
+}
+[data-s="services"] .body-text {
+  font-size: min(1.22cqw, 2cqh);
+  line-height: 1.42;
+}
+[data-s="services"] .stat-row { margin-top: .65cqw; }
+[data-s="services"] .stat { padding: min(.55cqw, .85cqh); }
+[data-s="services"] .stat b { font-size: min(1.9cqw, 3.2cqh); }
+[data-s="services"] .stat span {
+  font-size: min(.82cqw, 1.42cqh);
+  line-height: 1.25;
+}
+[data-s="services"] .btn {
+  margin-top: min(.7cqw, 1.1cqh);
+  padding-block: min(.5cqw, .75cqh);
+  font-size: min(1.1cqw, 1.75cqh);
+}
+
 /* contact rows */
 .cx { display: flex; align-items: center; gap: .85cqw; margin-top: .68cqw; }
 .cx-ico {
