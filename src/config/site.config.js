@@ -19,14 +19,14 @@ export const SITE = {
     'Bhandari Akshay Kumar - IT Infrastructure Program Manager',
 
   metaDescription:
-    'Portfolio of Bhandari Akshay Kumar, a project and program management professional with six years of experience in governance, cross-functional delivery, requirements management, document control, issue tracking, and technical coordination.',
+    'Portfolio of Bhandari Akshay Kumar, a project management professional with six years of experience in program coordination, governance, cross-functional delivery, requirements management, document control, issue tracking, and technical coordination.',
 
-  quoteLine1: 'Turning complex programs',
+  quoteLine1: 'Turning complex projects',
   quoteLine2: 'into controlled delivery.',
   quoteAuthor: 'Akshay Kumar',
 
   tagline: [
-    'Program Governance',
+    'Project Governance',
     'Cross-Functional Delivery',
     'IT Infrastructure'
   ],
@@ -47,7 +47,7 @@ export const SCREENS = [
     id: 'hero',
     label: 'Start Portfolio',
     frame: '/frames/01-hero.png',
-    objective: 'Explore an IT program<br>management journey',
+    objective: 'Explore a project delivery<br>and IT career journey',
     map: [22, 70],
     accent: '#36c5f0',
     accent2: '#ffb238',
@@ -69,7 +69,7 @@ export const SCREENS = [
     id: 'skills',
     label: 'Core Capabilities',
     frame: '/frames/03-skills.png',
-    objective: 'Inspect program and<br>technical capabilities',
+    objective: 'Inspect management and<br>technical capabilities',
     map: [46, 26],
     accent: '#7fb2d9',
     accent2: '#ffb238',
@@ -153,12 +153,12 @@ export const ABOUT = {
   title: 'Professional',
   subtitle: 'Profile',
 
-  intro: `I am a program and project management professional with six
-          years of experience coordinating end-to-end delivery, managing
-          requirements, documentation, and risks, and aligning stakeholders
-          with technical teams. I am now applying this experience to IT
-          infrastructure programs, PMO operations, and technology-led
-          delivery environments.`,
+  intro: `I am a project management professional with six years of
+          experience in end-to-end delivery. My background includes
+          requirements management, document control, risk and issue tracking,
+          and coordination across stakeholders and technical teams. I am now
+          applying these transferable skills to IT infrastructure projects,
+          PMO operations, and technology-led delivery environments.`,
 
   cards: [
     {
@@ -299,7 +299,7 @@ export const EXPERIENCE = {
       period: '2023–PRESENT',
       role: 'Development Manager & Civil Engineer',
       description:
-        'At Hanuman Housing Projects, I manage end-to-end programs covering requirements, planning, approvals, document governance, issue resolution, stakeholder reporting, resource coordination, execution, and handover.'
+        'At Hanuman Housing Projects, I manage end-to-end project delivery, including requirements, planning, approvals, document governance, issue resolution, stakeholder reporting, resource coordination, execution, and handover.'
     },
     {
       period: '2019–2023',
@@ -368,12 +368,12 @@ export const SERVICES = {
   titleLine2: 'I Bring',
   subtitle: 'For IT Teams',
 
-  intro: `I bring structured program coordination, governance discipline,
+  intro: `I bring structured project coordination, governance discipline,
           clear stakeholder communication, and a hands-on approach to
           technical learning to IT infrastructure and PMO teams. My
-          strengths are most valuable in environments where stakeholders,
-          controlled documentation, dependencies, risks, and delivery
-          milestones must remain aligned.`,
+          strengths are most valuable in environments where multiple
+          stakeholders must coordinate documentation, dependencies, risks,
+          and delivery milestones.`,
 
   stats: [
     {
