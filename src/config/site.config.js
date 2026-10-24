@@ -296,14 +296,14 @@ export const EXPERIENCE = {
 
   timeline: [
     {
-      period: '2020 - PRESENT',
+      period: '2023 - PRESENT',
       role: 'Development Manager & Civil Engineer',
       description:
         'Hanuman Housing Projects - Own end-to-end programs covering requirements, planning, approvals, document governance, issue resolution, stakeholder reporting, resource coordination, execution, and handover.'
     },
     {
       period: '2019 - 2023',
-      role: 'B.E. Civil Engineering',
+      role: 'B.Tech Civil Engineering',
       description:
         'GITAM Deemed to be University - Built an engineering foundation in structured problem-solving, technical coordination, research, documentation, and project execution.'
     },
